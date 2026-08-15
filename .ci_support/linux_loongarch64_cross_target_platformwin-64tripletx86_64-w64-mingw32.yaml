@@ -1,0 +1,28 @@
+bootstrap:
+- true
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.38'
+channel_sources:
+- conda-forge,loong64
+channel_targets:
+- loong64 main
+cross_target_platform:
+- win-64
+ctng_vendor:
+- none
+cxx_compiler:
+- gcc_bootstrap
+cxx_compiler_version:
+- '15'
+docker_image:
+- ghcr.io/loong64/condaforge/linux-anvil-x86_64:alma10
+target_platform:
+- linux-riscv64
+triplet:
+- x86_64-w64-mingw32
+zip_keys:
+- - triplet
+  - ctng_vendor
+  - cross_target_platform
